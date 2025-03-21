@@ -19,3 +19,9 @@ for(i in 1:length(size)){
 
 #print out the pizzas; should have 24
 pizzas
+
+
+#count total number of large sausages; should get 2
+#   we divide by 3 because rows are length 3, and we want
+#   to convert back to number of rows (i.e., number of pizzas)
+length(pizzas[pizzas[ ,1] == "L" & pizzas[ ,2] == "sausage"])/3
